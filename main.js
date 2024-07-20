@@ -9,6 +9,7 @@ function resultado(dados){
     document.querySelector(".umi").innerHTML = 'Humidade de: ' + dados.main.humidity +'%'
     document.querySelector(".icon").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
     
+    document.querySelector(".city").value = ""
 }
 async function search(city){
       const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`).then( resposta => resposta.json())
