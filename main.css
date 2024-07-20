@@ -18,8 +18,8 @@ body{
     background-color: rgba(31, 31, 31, 0.74);
     border-radius: 25px;
     padding: 40px;
-    width: 50vh;
-    height: 50vh;
+    width: 720px;
+    height: 450px;
 }
 .city{
    padding: 20px;
@@ -47,27 +47,31 @@ body{
 .name-city{
     margin-top: 20px;
     font-size: 32px;
+    text-align: center;
 }
 .tempo{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin: 25px;
+    justify-content: center;
 }
 .umi{
-    margin-top: 50px;
+    text-align: center;
 }
 .temp{
    font-size: 32px;
-   margin-top: 20px
+   margin-top: 20px;
+   text-align: center;
 }
 .ceu{
     text-transform: capitalize;
-    margin-left: 8px;
 }
 
 @media (max-width: 767px){
     .name-city{
      font-size: 24px;
+     
     }
     .temp{
         font-size: 24px;
@@ -83,7 +87,7 @@ body{
     }
     .container{
         padding: 20px;
-        width: 40vh;
-        height: 40vh;
+        width: 350px;
+        height: 350px;
     }
 }

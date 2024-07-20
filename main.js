@@ -3,7 +3,7 @@ const key = ('570c2766dec839f77d0395b17c025134')
 
 function resultado(dados){
     console.log(dados)
-    document.querySelector(".name-city").innerHTML = "Tempo em: " + dados.name
+    document.querySelector(".name-city").innerHTML =  dados.name
     document.querySelector(".temp").innerHTML = Math.floor(dados.main.temp) + '°C'
     document.querySelector(".ceu").innerHTML = dados.weather[0].description
     document.querySelector(".umi").innerHTML = 'Humidade de: ' + dados.main.humidity +'%'
